@@ -1,0 +1,154 @@
+/* importing font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* defining colors */
+:root{
+    --color-primary: #FF3366;
+    --color-secondary: #FCFCFF;
+    --color-accent: #D5D5D6;
+    --color-bg: #28293E;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-secondary);
+}
+
+main{
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav>div{
+    flex: 1;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#nav-link>ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-link li{
+    list-style-type: none;
+    margin: 24px 36px;    
+}
+
+#nav-link li:last-child > a{
+    display: inline-block;
+    padding: 18px 40px;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    margin-left: 48px;
+}
+
+section#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 82px;
+    font-weight: 500;
+    line-height: 100px;
+    margin: 0;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#hero input{
+    width: 250px;
+    height: 55px;
+    border: 1px solid #FCFCFF;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: var(--color-bg);
+    font-size: large;
+    padding: 24px;
+    color: white;
+}
+#hero button{
+    width: 87px;
+    height: 55px;
+    border-radius: 7px;
+    font-size: large;
+    color: white;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    margin-left: 16px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+    .container{
+        width: 540px;
+        margin: 0 auto;
+    }
+        
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        width: 720px;
+        margin: 0 auto;
+    }
+        
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        width: 960px;
+        margin: 0 auto;
+    }
+        
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1140px;
+        margin: 0 auto;
+    }
+        
+}
+
+@media screen and (min-width: 1400px) {
+    .container{
+        width: 1320px;
+        margin: 0 auto;
+    }
+        
+}
+
